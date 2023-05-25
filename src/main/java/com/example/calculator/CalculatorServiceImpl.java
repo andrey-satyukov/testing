@@ -22,12 +22,22 @@ public class CalculatorServiceImpl implements CalculatorService {
 
     @Override
     public String minus(Integer num1, Integer num2) {
-        return null;
+        if (num1 == null) {
+            return "Введите первое число";
+        } else if (num2 == null) {
+            return "Введите второе число";
+        }
+        return num1 + " - " + num2 + " = " + (num1 - num2); // “5 + 5 = 10”
     }
 
     @Override
     public String multiply(Integer num1, Integer num2) {
-        return null;
+        if (num1 == null) {
+            return "Введите первое число";
+        } else if (num2 == null) {
+            return "Введите второе число";
+        }
+        return num1 + " * " + num2 + " = " + (num1 * num2); // “5 + 5 = 10”
     }
 
     @Override
